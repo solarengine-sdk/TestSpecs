@@ -1,13 +1,6 @@
 use_frameworks!
-
-platform :ios, '10.0'
-
-target 'TestSpecs_Example' do
-  pod 'TestSpecs', :path => '../'
-
-  target 'TestSpecs_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'SETestSpecs_Tests' do
+  pod 'SETestSpecs', :path => '../'
+  
+  
 end

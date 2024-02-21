@@ -1,0 +1,22 @@
+{
+  "name": "SETestSpecs",
+  "version": "0.1.0",
+  "summary": "A short description of SETestSpecs.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sdk@solar-engine.com/SETestSpecs",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sdk@solar-engine.com": "baixin.pan@mobvista.com"
+  },
+  "source": {
+    "git": "https://github.com/sdk@solar-engine.com/SETestSpecs.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SETestSpecs/Classes/**/*"
+}
