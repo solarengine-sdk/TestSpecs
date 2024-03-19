@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SETestSpecs'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'SE TestSpecs for iOS'
 
   s.homepage         = 'https://github.com/sdk@solar-engine.com/TestSpecs'
@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/solarengine-sdk/TestSpecs.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = 'SETestSpecs/SolarEngineSDK.framework'
+  s.vendored_frameworks = 'SETestSpecs/SolarEngineSDK.xcframework'
 
   s.frameworks = "Security", "CoreTelephony", "AdSupport", "SystemConfiguration", "AdServices", "AppTrackingTransparency"
   s.libraries = "sqlite3"
   s.requires_arc = true
-  s.resource_bundles = {'SETestSpecs' => ['SETestSpecs/SolarEngineSDK.framework/PrivacyInfo.xcprivacy']}
+  s.resource_bundles = {'SETestSpecs' => ['SETestSpecs/SolarEngineSDK.xcframework/ios-arm64/SolarEngineSDK.framework/PrivacyInfo.xcprivacy']}
 
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
